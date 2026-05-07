@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Thế Nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v10/font/simple-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/audio.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/reponsive.js"></script>
+</head>
+<body>
+    <div class="fixed-bg"></div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#about-hero">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('about-hero').scrollIntoView({behavior:'smooth'});">Giới Thiệu</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'});">Kỹ Năng</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'});">Hành Trình</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'});">Dự Án</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('philosophy').scrollIntoView({behavior:'smooth'});">Triết Lý</a></li>
+                    <li><a href="javascript:void(0)" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Liên Hệ</a></li>
+                </ul>
+
+                <div class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+                    <i class="fas fa-music"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section id="about-hero" class="about-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Đinh Thế Nhân</h1>
+                    <h2>Front End Developer</h2>
+                    <p>"Xin chào, tôi là lập trình viên Frontend đam mê tạo ra trải nghiệm người dùng mượt mà và chuyên nghiệp."</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="number" data-count="12">0</div>
+                            <span>Dự án hoàn thành</span>
+                        </div>
+                        <div class="stat">
+                            <div class="number" data-count="2">0</div>
+                            <span>Năm phát triển</span>
+                        </div>
+                        <div class="stat">
+                            <div class="number" data-count="100">0</div>
+                            <span>% Đam mê</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/myface.png" alt="Đinh Thế Nhân">
+                        <div class="image-glow"></div>
+                        <div class="floating-elements">
+                            <div class="element element-1"><i class="fab fa-js"></i></div>
+                            <div class="element element-2"><i class="fab fa-react"></i></div>
+                            <div class="element element-3"><i class="fab fa-node-js"></i></div>
+                            <div class="element element-4"><i class="fas fa-database"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2 class="section-title">Kỹ Năng Chuyên Môn</h2>
+        <div class="skills-grid">
+            
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend</h3>
+                <div class="skill-item">
+                    <span>HTML5/CSS3 (Responsive, UI/UX)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript / TypeScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="65"></div>
+                    </div>
+                    <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-item">
+                    <span>ReactJS / Next.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                    <span class="skill-percent">78%</span>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-item">
+                    <span>Node.js / Express</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-item">
+                    <span>MongoDB / Mongoose / Postman</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-item">
+                    <span>Database Design</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Công Cụ</h3>
+                <div class="skill-item">
+                    <span>Git / GitHub</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="94"></div>
+                    </div>
+                    <span class="skill-percent">94%</span>
+                </div>
+                <div class="skill-item">
+                    <span>Deploy Web (Render, Vercel, Hosting/VPS)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-item">
+                    <span>Postman / API Testing</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <!-- <div class="section-title">
+                <h2>Kỹ Năng</h2>
+            </div> -->
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Thành thạo HTML5 và các semantic elements, tạo cấu trúc website chuẩn SEO.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>CSS3, Flexbox, Grid, Animation và thiết kế responsive cho mọi thiết bị.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript thuần, ES6+ và các concept quan trọng như async programming, DOM manipulation.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>ReactJS</h3>
+                    <p>Xây dựng ứng dụng với React, Hooks, Redux và các thư viện liên quan.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node"></i>
+                    </div>
+                    <h3>NodeJS</h3>
+                    <p>Xây dựng Server key và Backend bằng Node.js Express.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>Làm việc với cơ sở dữ liệu NoSQL, thiết kế schema và query dữ liệu.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Quản lý mã nguồn, làm việc nhóm với Git/GitHub.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="si si-nextdotjs"></i>
+                    </div>
+                    <h3>Next.js</h3>
+                    <p>Phát triển ứng dụng web hiện đại với React framework Next.js.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Hành Trình Phát Triển</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">8-2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Bắt đầu học lập trình</h3>
+                        <p>Bắt đầu hành trình với HTML, CSS và JavaScript, PHP, SQL</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2-2024 - 12-2024</div>
+                    <div class="timeline-content">
+                        <h3>Tham gia các dự án nhóm</h3>
+                        <p>Thành thạo và tham gia thiết kế UI/UX các dự án nhóm (code frontend chính)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1-2025 - 6-2025</div>
+                    <div class="timeline-content">
+                        <h3>Phát triển kỹ năng chuyên sâu</h3>
+                        <p>Nâng cao kỹ năng với <strong>NodeJS, ReactJS, TypeScript</strong> và triển khai dự án nhóm.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">6-2025 - 8-2025</div>
+                    <div class="timeline-content">
+                        <h3>Thực tập & Tốt nghiệp</h3>
+                        <p>Thực tập tại CÔNG TY NICHIETSU và làm dự án tốt nghiệp (Code backend NodeJS chính)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">9-2025</div>
+                    <div class="timeline-content">
+                        <h3>Freelancer</h3>
+                        <p>Nhận các dự án freelance về <strong>Front-end</strong> và <strong>Back-end</strong>, xây dựng website theo yêu cầu khách hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Achievements Section -->
+    <!-- <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Thành Tựu Nổi Bật</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-number" data-count="15420">0</div>
+                    <div class="achievement-text">Tệp tin được chia sẻ</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-number" data-count="8920">0</div>
+                    <div class="achievement-text">Người dùng tin tưởng</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="achievement-number" data-count="124500">0</div>
+                    <div class="achievement-text">Lượt tải xuống</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="achievement-number" data-count="99">0</div>
+                    <div class="achievement-text">% Uptime hệ thống</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Các Dự Án Thực Tế</h2>
+            </div>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <h3>Dự Án Tuyển Dụng</h3>
+                    <div class="experience-date">Tháng 6/2025 - Tháng 8/2025</div>
+                    <p>Xây dựng website thương mại điện tử với ReactJS và Node.js. Thiết kế responsive và tối ưu trải nghiệm người dùng.</p>
+                    <div class="experience-overlay">
+                        <h4>(React + NodeJS)</h4>
+                        <div class="overlay-buttons">
+                            <a href="https://github.com/dtnhan205/api_tuyendung_cty" target="_blank" class="overlay-btn code-btn">Code BA</a>
+                            <a href="https://github.com/JePpydeyy/React_WebTuyenDung" target="_blank" class="overlay-btn demo-btn">Code FE</a>
+                            <a href="https://ppm-demo.nichietsuvn.com" target="_blank" class="overlay-btn demo-btn">Xem Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <h3>Tài Liệu API</h3>
+                    <div class="experience-date">Tháng 8/2025 - Tháng 9/2025</div>
+                    <p>Phát triển tài liệu API của dự án Mỹ Phẩm tích hợp Spline 3D scene.</p>
+                    <div class="experience-overlay">
+                        <h4>(React)</h4>
+                        <div class="overlay-buttons">
+                            <a href="https://github.com/dtnhan205/TaiLieuApi_DUANTN" target="_blank" class="overlay-btn code-btn">Xem Code</a>
+                            <a href="https://dinhthenhan.site" target="_blank" class="overlay-btn demo-btn">Xem Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <h3>Dự Án Bán Mỹ Phẩm</h3>
+                    <div class="experience-date">Tháng 6/2025 - Tháng 8/2025</div>
+                    <p>Thiết kế và code website bán mỹ phẩm (Code chính BA). Tham gia code luồng đi chính và Chatbot AI.</p>
+                    <div class="experience-overlay">
+                        <h4>(React + NextJS + NodeJS)</h4>
+                        <div class="overlay-buttons">
+                            <a href="https://github.com/dtnhan205/api_pure_bonanica" target="_blank" class="overlay-btn code-btn">Code BA</a>
+                            <a href="https://github.com/JePpydeyy/Pure-Botanica" target="_blank" class="overlay-btn demo-btn">Code FE</a>
+                            <a href="http://purebotanica.online/" target="_blank" class="overlay-btn demo-btn">Xem Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy-section">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <h2>Triết Lý Làm Việc</h2>
+                    <blockquote>
+                        "Code không chỉ là công việc, đó là nghệ thuật. Mỗi dòng code là một nét vẽ, 
+                        mỗi hệ thống là một kiệt tác. Tôi tin rằng sự đơn giản và hiệu quả 
+                        luôn đi đôi với nhau."
+                    </blockquote>
+                    <div class="philosophy-points">
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Luôn học hỏi công nghệ mới</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Chú trọng trải nghiệm người dùng</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Code sạch, tài liệu rõ ràng</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check"></i>
+                            <span>Bảo mật là ưu tiên hàng đầu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-image">
+                    <div class="code-animation">
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Liên Hệ</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Thông tin liên hệ</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p>dinhnthenhandako@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <p>+84 342 031 354</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p>Đồng Nai, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="contact-info social-links-container">
+                    <h3>Kết nối với tôi</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/dinhthenhan" class="social-link" aria-label="Visit my Facebook" style="--delay: 0.1s;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://zalo.me/0342031354" class="social-link" aria-label="Contact me on Zalo" style="--delay: 0.2s;">
+                            <i class="si si-zalo"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@nhanreg" class="social-link" aria-label="Visit my YouTube" style="--delay: 0.3s;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@thenhanff" class="social-link" aria-label="Visit my TikTok" style="--delay: 0.4s;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://github.com/dtnhan205" class="social-link" aria-label="Visit my GitHub" style="--delay: 0.5s;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dinhnhan_05" class="social-link" aria-label="Visit my Instagram" style="--delay: 0.6s;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Đinh Thế Nhân. Web Developer.</p>
+        </div>
+    </footer>
+    <audio id="bg-music" autoplay loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+    <script>
+        // About Page JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    initScrollAnimations();
+    initNumberCounting();
+    initSkillBars();
+    initTimelineAnimation();
+});
+
+// Number Counting Animation
+function initNumberCounting() {
+    const numberElements = document.querySelectorAll('.number, .achievement-number');
+    
+    numberElements.forEach(element => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounting(element);
+                    observer.unobserve(element);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(element);
+    });
+}
+
+function startCounting(element) {
+    const target = parseInt(element.getAttribute('data-count'));
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+    
+    const updateCount = () => {
+        current += step;
+        if (current < target) {
+            element.textContent = Math.floor(current).toLocaleString();
+            requestAnimationFrame(updateCount);
+        } else {
+            element.textContent = target.toLocaleString();
+            
+            // Add celebration effect for main stats
+            if (element.classList.contains('number')) {
+                element.style.animation = 'celebrate 0.5s ease';
+            }
+        }
+    };
+    
+    updateCount();
+}
+
+// Skill Bars Animation
+function initSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    
+    skillBars.forEach(bar => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const width = bar.getAttribute('data-width');
+                    bar.style.width = width + '%';
+                    observer.unobserve(bar);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(bar);
+    });
+}
+
+// Timeline Animation
+function initTimelineAnimation() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-animate');
+            }
+        });
+    }, { 
+        threshold: 0.3,
+        rootMargin: '0px 0px -100px 0px'
+    });
+    
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
+}
+
+// Scroll Animations
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-animate');
+            }
+        });
+    }, observerOptions);
+
+    // Observe all animate-able elements
+    const elementsToAnimate = document.querySelectorAll(
+        '.hero-text, .hero-stats, .skill-category, .achievement-card, .philosophy-text'
+    );
+
+    elementsToAnimate.forEach(el => {
+        observer.observe(el);
+    });
+}
+
+// Add celebration animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes celebrate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    
+    @keyframes fadeInRight {
+        from { opacity: 0; transform: translateX(50px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    
+    .scroll-animate {
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+`;
+document.head.appendChild(style);
+    </script>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+// PHIÊN BẢN CHẶN SIÊU CỨNG 2025 – KHÔNG AI MỞ ĐƯỢC SOURCE (gần như tuyệt đối)
+// ═══════════════════════════════════════════════════════════════════
+
+(() => {
+  // 1. Chặn chuột phải + kéo thả + chọn văn bản
+  const blockEvent = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  };
+
+  document.addEventListener('contextmenu', blockEvent, true);
+  document.addEventListener('selectstart', blockEvent, true);
+  document.addEventListener('dragstart', blockEvent, true);
+
+  // 2. Chặn toàn bộ phím tắt DevTools (F12, Ctrl+Shift+I/J/C/K, Ctrl+U, Cmd+Option+I, v.v.)
+  document.addEventListener('keydown', (e) => {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey || e.metaKey) && e.shiftKey && (e.key.toUpperCase() === 'I' || e.key.toUpperCase() === 'J' || e.key.toUpperCase() === 'C') ||
+      (e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'U' ||
+      (e.ctrlKey || e.metaKey) && e.key.toUpperCase() === 'S' ||
+      (e.ctrlKey || e.metaKey) && e.key === 'a'
+    ) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+  }, true);
+
+  // 3. Chặn mở DevTools bằng menu Safari trên iPhone/iPad
+  // (người dùng vào Cài đặt → Safari → Nâng cao → Web Inspector sẽ không thấy gì)
+  setInterval(() => {
+    if (window.console && (console.clear(), console.log = () => {}, console.warn = () => {}, console.error = () => {}));
+  }, 100);
+
+  // 4. Siêu trick 2025: Làm hỏng debugger ngay khi ai đó cố mở
+  let devtoolsOpen = false;
+  const threshold = 160;
+
+  setInterval(() => {
+    if (window.outerHeight - window.innerHeight > threshold || 
+        window.outerWidth - window.innerWidth > threshold) {
+      devtoolsOpen = true;
+    }
+  }, 500);
+
+  // 5. Chặn lệnh console thủ công (người dùng gõ vào console)
+  Object.defineProperty(window, 'console', {
+    value: {
+      log: () => {},
+      warn: () => {},
+      error: () => {},
+      clear: () => {},
+      table: () => {},
+      dir: () => {}
+    },
+    writable: false
+  });
+
+  // 6. Bonus: Làm nhòe toàn bộ trang nếu cố copy
+  document.addEventListener('copy', (e) => {
+    e.preventDefault();
+    document.body.style.filter = 'blur(20px)';
+    setTimeout(() => document.body.style.filter = '', 3000);
+  });
+})();
+</script>
+
+</body>
+</html>
